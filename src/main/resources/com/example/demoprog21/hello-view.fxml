@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="486.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoprog21.HelloController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" prefHeight="54.0" prefWidth="486.0" text="Music Player" textFill="#f43520">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="musicLabel" alignment="CENTER" layoutY="60.0" prefHeight="136.0" prefWidth="486.0" text=".MP3" textFill="#4800ef">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="playButton" layoutX="14.0" layoutY="214.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="26.0" prefWidth="61.0" text="Play" />
+      <Button fx:id="pauseButton" layoutX="113.0" layoutY="214.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="26.0" prefWidth="61.0" text="Pause" />
+      <Button fx:id="resetButton" layoutX="213.0" layoutY="213.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="26.0" prefWidth="61.0" text="Reset" />
+      <Button fx:id="previousButton" layoutX="313.0" layoutY="214.0" mnemonicParsing="false" onAction="#previousMedia" text="Previous" />
+      <Button fx:id="nextButton" layoutX="410.0" layoutY="213.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="26.0" prefWidth="61.0" text="Next" />
+      <ComboBox fx:id="speedBox" layoutX="91.0" layoutY="245.0" onAction="#changeSpeed" prefWidth="150.0" promptText="Speed" />
+      <Slider fx:id="volumeSlider" layoutX="290.0" layoutY="251.0" prefHeight="14.0" prefWidth="150.0" value="50.0" />
+      <ProgressBar fx:id="myProgressBar" layoutX="13.0" layoutY="167.0" prefHeight="18.0" prefWidth="461.0" progress="0.0" />
+   </children>
+</AnchorPane>
